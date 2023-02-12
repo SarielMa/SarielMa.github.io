@@ -24,3 +24,5 @@ I am a Ph.D. student in Computer Science at the University of Miami. I am workin
 I have served as a reviewer for many international peer-review journals and conferences, including top-tier conferences, e.g., ICML and NeurIPS, and top-ranking journals in AI, e.g., Artificial Intelligence.
 
 Before the University of Miami, I got my master's degree from the State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences. I was working with [Dr. Peng Wu](http://lcs.ios.ac.cn/~wp/). In pursuing my master's degree, my research interest is software testing and concurrency. I proposed an adaptive algorithm to test C++ concurrent data structures based on the coverage criterion.   
+
+Please find my [CV](assets/pdf/LinhaiMa_CV_20221101_engineer.pdf)  here. 
