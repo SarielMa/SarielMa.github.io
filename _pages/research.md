@@ -10,48 +10,111 @@ nav_order: 5
 ___
 
 ## Research projects:
-                                      
-### Project:                                                  
--	Proposed methods to improve the following deep learning applications for better robustness:
-    -	Unet-based model (nnUnet) for Heart, Hippocampus and Prostate MRI images segmentation.
-    -	Multi-task Unet-based model for cephalometric landmark detection.
-    -	YOLO V5 for blood cell detection.
--	The experiments were conducted on Tesla V100 GPU.
--	The improved models have better accuracy under testing noises than the baseline models.
+
+---
+
+## Project: Improve robustness of DNN for ECG signal classification
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/icmla.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/cbm.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
+- Motivation:
+
+    - Electrocardiogram (ECG) is often the first step for the diagnosis of heart conditions before using expensive cardiac medical imaging.
+    - Researchers have been developing machine learning-based ECG signal analysis methods for decades. Deep learning have demonstrated superior performance in a wide range of applications and were successfully applied for automatic ECG signal diagnosis. However, DNNs are known to be vulnerable to adversarial noises.
+    - To our best knowledge, this is the first work to improve DNN robustness against adversarial attacks for ECG classification.
+
+- Brief description of our work:
+
+    -	We proposed a regularization method to improve the deep-learning-based electrocardiogram automatic diagnosis for better robustness. 
+    -	We designed a multiple-layer perceptron (MLP) model for electrocardiogram data classification (from PhysionNet’s MIT-BIH dataset), whose prediction accuracy is 92%.                    
+    -	We designed and implemented a CNN model for a variant-length 12-lead electrocardiogram classification task (from the China Physiological Signal Challenge 2018) via Python, Pytorch, Pandas, Scikit-learn, etc., which achieved top performance in the challenge.       
+    -   We evaluated the robustness of the models under PGD100, SAP and uniform white noises. 
+    -   We did ablation study to show how sensitive this method is sensitive to the hyperparameters. 
+    -   We defined a criterion for hyperparameter selection.
+
+-   Please read our papers ([1](https://www.sciencedirect.com/science/article/pii/S0010482522001378), [2](https://ieeexplore.ieee.org/abstract/document/9356227), [3](https://arxiv.org/abs/2005.09134)) for details.
 
 ___
 
-### Project:
+## Project: Increasing-margin adversarial (IMA) training to improve adversarial robustness of neural networks
+ {% include figure.html path="assets/img/ima.png" title="example image" class="img-fluid rounded z-depth-1" %}    
 
-- Proposed a training method via increasing margin ideas to improve the neural networks for better robustness and gave the theoretical proof of the training method's convergence.
-- Evaluated the proposed method with residual net classifiers on public image datasets, e.g., CIFAR10, TinyImageNet, etc., and real-world medical images, e.g., Covid-19 CT.
-- The experiments were conducted via Python, Pytorch, Pandas, Scikit-learn, etc., on Tesla V100 GPU.
-- The proposed method significantly improved the model’s robustness against adversarial noises with minimal accuracy degradation.
+- Motivation:
+    - To improve the adversarial robustness of a DNN model, adversarial training is the most general strategy. However, training a model by adversarielly will significantly harm the model's accuracy.
+    - Our study aims to lift the trade off between adversarial robustness and standard accuracy: alleviate (or even avoid) the reduction in standard accuracy while improving adversarial robustness.
+
+- Brief description of our work: 
+    - Proposed a training method via increasing margin ideas to improve the neural networks for better robustness.
+    - Evaluated the proposed method with residual net classifiers on image datasets, PathMnist and Cifar10, and real-world medical images, Covid-19 CT.
+    - Mitigate this method to medical image segmentation tasks.
+    - The proposed method significantly improved the model’s robustness against adversarial noises with minimal accuracy degradation.
+- Please read our [paper](https://arxiv.org/abs/2005.09147) for details. 
+
+---  
+
+## Project: Improving Adversarial Robustness of Deep Neural Networks Via Adaptive Margin Evolution
+ {% include figure.html path="assets/img/ame.png" title="example image" class="img-fluid rounded z-depth-1" %}  
+- Motivation:
+    - Adversarial training is the most popular and general strategy to improve Deep Neural Network (DNN) robustness against adversarial noises. Many adversarial training methods have been proposed in the past few years. However, most of these methods are highly susceptible to hyperparameters, especially the training noise upper bound. Tuning these hyperparameters is expensive and difficult for people not in the adversarial robustness research domain, which prevents adversarial training techniques from being used in many application fields. 
+    - We wanted to propose a hyperparamter-free adversarial training method.
+
+- Brief description of our work:                  
+    - We proposed a hyperparameter-free adversarial training method.
+    - We proved the existence of the optimal convergence state.
+    - We evaluated the proposed method with residual net classifiers on public image datasets, CIFAR10, TinyImageNet and SVHN.
+- Please read our [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4342066) for details.
+
+---            
+
+### Adaptive Adversarial Training to Improve Adversarial Robustness of DNNs for Medical Image Segmentation and Detection
+
+{% include figure.html path="assets/img/amat.png" title="example image" class="img-fluid rounded z-depth-1" %}
+
+- Motivation:
+    -   Deep Neural Networks are vulnerable to adversarial noises and variant defense methods have been proposed recently. However, most of the methods are proposed under the assumption of classification situation. Although there are similarities between classification tasks and other tasks, e.g., regression, there are still gaps between them, e.g, some defense methods uses misclassification creteria, which is well-defined in classification but not in regression. As a result, the defense methods proposed for classification may not be derectly applied to other tasks. On the other hand, in medical image application domain, non-classification tasks, e.g., segmentaion, location and detection, are more often seen than classification of a whole image. As a result, we wanted to propose a defense method that can be applied to variant types of deep learning-based tasks. 
+    -   Vanilla adversarial training is a simple but effective defense method. Also, it can be applied to almost all kinds of tasks. However, Vanilla adversarial training has its inner drawbacks: it is higly sensitive to its fixed and unified training noise upper bound. A unsuitable training noise upper bound may either reduce the model's accuracy significantly or make the adversarial-trained models not robust enough. As a result, we wanted to propose an adaptive adversarail training method that can adapt the training noise upper bound during the training process.
+
+- Brief description of our work:
+    -	We proposed a general adaptive adversarial training to improve the deep learning applications.
+    -   We evaluated this methods in variant medical image application tasks:
+        -	Unet-based model (nnUnet) for Heart, Hippocampus and Prostate MRI images segmentation.
+        -	Multi-task Unet-based model for cephalometric landmark detection.
+        -	YOLO V5 for blood cell detection.
+    -	The experiments were conducted on Tesla V100 GPU and the results show that our proposed methods are effective in variant medical image application tasks.
+
+-   Please read our [paper](https://arxiv.org/abs/2206.01736) for details.
 
 ___
 
-## Project:    
-                     
--	Designed and implemented a CNN model for a variant-length 12-lead electrocardiogram classification task (from the China Physiological Signal Challenge 2018) via Python, Pytorch, Pandas, Scikit-learn, etc., which achieved top-6 performance in the challenge. 
--	Designed and implemented a multiple-layer perceptron (MLP) model for electrocardiogram data classification (from PhysionNet’s MIT-BIH dataset) via Python, Pytorch, Pandas, Scikit-learn, etc., whose prediction accuracy is 92%.
--	Proposed a regularization method to improve the deep-learning-based electrocardiogram automatic diagnosis for better robustness. The experiments show that the proposed method improved the model’s robustness and outperformed other competitive methods in the paper.
+## Diversity driven adaptive test generation for concurrent data structures
 
-___
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/ATG1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/ATG2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
-## project
-                                                
--	Parsed author and publication data (from 1991 to 2018) from Microsoft Graph database via SQL and Python to build up one author-to-author graph (millions by millions matrix) for each year.
--	Designed a clustering machine learning algorithm based on the Monte Carlo method to cluster the graph into author groups. This algorithm is implemented via Python and R.
--	Defined these author groups’ evolution patterns (splitting, merging, etc.) in two adjacent years and collected these patterns via Python to show how each author group evolves over the years.
--	Discovered the mathematical relationship between each group’s evolution patterns and the group’s success (e.g., the number of citations) via Python and R to get the conclusion, that is, what evolution pattern is more likely to contribute to a successful group.
+- Motivation:
+    - Testing concurrent data structures remains a notoriously challenging task, due to the nondeterminism of multi-threaded tests and the exponential explosion on the number of thread schedules.
+    - Testing a concurrent data structure may raise more challenges than testing a concurrent program because a concurrent data structure cannot run on its own. A test case of a concurrent data structure is a multi-threaded program that makes simultaneous accesses to the concurrent data structure. Obviously, the test case space is infinite in general. Therefore, it gives rise to a fundamental problem on the automated generation of effective multi-threaded test cases (i.e., concurrent programs) for concurrent data structures.
 
-___
+- Brief description of our work:
+    -	We designed and developed a C++ generator via Python and C\C++ to automatically parse the C++ class (the concurrent data structure implemented with the pthread library) and to generate test cases that invoke the class. 
+    -	We proposed two two diversity metrics and three adaptive algorithms to improve the C++ test case generation.
+    -   The proposed methods discovered up to 6% more potential concurrent errors and reduced the time cost by up to 10%, than the baseline method.
 
-## project
-
--	Designed and developed a C++ generator via Python and C\C++ to automatically parse the C++ class (the concurrent data structure implemented with the pthread library) and to generate test cases that invoke the class. 
--	Proposed three novel algorithms to optimize the C++ test case generator, which discovered up to 6% more potential concurrent errors and reduced the time cost by up to 10%.
--       Please read our [paper](https://www.sciencedirect.com/science/article/pii/S0950584918301356) for details, .
+-   Please read our [paper](https://www.sciencedirect.com/science/article/pii/S0950584918301356) for details.
 
  ___
 
