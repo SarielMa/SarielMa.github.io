@@ -127,6 +127,6 @@ ___
 -	1 paper in Artificial Intelligence (AI)– A peer-reviewed journal in AI
 -	1 paper in Computers in Biology and Medicine (CIBM) – A peer-reviewed journal in biomedical informatics
 -	2 papers in Computer Systems Science and Engineering (CSSE) – A peer-reviewed journal in computer systems science
--       1 paper in Computers, Materials & Continua (CMC)–  A peer-reviewed journal in computational materials science and engineering.
+-	1 paper in Computers, Materials & Continua (CMC)–  A peer-reviewed journal in computational materials science and engineering
 
 
