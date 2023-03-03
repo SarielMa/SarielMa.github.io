@@ -1,15 +1,10 @@
 ---
 layout: page
 permalink: /research/
-title: research 
+title: research projects 
 description: 
 nav: true
 nav_order: 5
----
-
-___
-
-## Research projects:
 
 ---
 
@@ -74,7 +69,7 @@ ___
 
 ---            
 
-### Adaptive Adversarial Training to Improve Adversarial Robustness of DNNs for Medical Image Segmentation and Detection
+## Project:  Adaptive Adversarial Training to Improve Adversarial Robustness of DNNs for Medical Image Segmentation and Detection
 
 {% include figure.html path="assets/img/amat.png" title="example image" class="img-fluid rounded z-depth-1" %}
 
@@ -94,7 +89,7 @@ ___
 
 ___
 
-## Diversity driven adaptive test generation for concurrent data structures
+## Project: Diversity driven adaptive test generation for concurrent data structures
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">
@@ -116,17 +111,6 @@ ___
 
 -   Please read our [paper](https://www.sciencedirect.com/science/article/pii/S0950584918301356) for details.
 
- ___
 
-## Reviewer Experience:
--	1 paper in International Conference on Machine Learning 2022 (ICML2022) – AI top conference
--	3 papers in Neural Information Processing Systems 2022 (NeurIPS 2022) – AI top conference
--	1 paper in Scientific Programming – A peer-reviewed journal in software engineering
--	1 paper in IEEE Journal of Biomedical and Health Informatics (JBHI)– A peer-reviewed journal in biomedical informatics
--	4 papers in Expert Systems with Applications (ESWA) – A peer-reviewed journal in intelligent systems applications
--	1 paper in Artificial Intelligence (AI)– A peer-reviewed journal in AI
--	1 paper in Computers in Biology and Medicine (CIBM) – A peer-reviewed journal in biomedical informatics
--	2 papers in Computer Systems Science and Engineering (CSSE) – A peer-reviewed journal in computer systems science
--	1 paper in Computers, Materials & Continua (CMC)–  A peer-reviewed journal in computational materials science and engineering
 
 
