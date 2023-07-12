@@ -26,3 +26,7 @@ bundle install
 bundle exec jekyll serve
 
 # change the thing in /pages
+
+
+token
+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
