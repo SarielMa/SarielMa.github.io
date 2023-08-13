@@ -26,3 +26,5 @@ I have served as a reviewer for many international peer-review journals and conf
 Before the University of Miami, I got my master's degree from the State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences. I was working with [Dr. Peng Wu](http://lcs.ios.ac.cn/~wp/). In pursuing my master's degree, my research interest is software testing and concurrency. I proposed an adaptive algorithm to test C++ concurrent data structures based on the coverage criterion.   
 
 Please find my [CV](assets/pdf/LinhaiMaCV.pdf)  here. 
+
+## I am actively seeking a postdoc or an R&D position in AI/ML.
