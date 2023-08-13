@@ -28,3 +28,5 @@ Before the University of Miami, I got my master's degree from the State Key Labo
 Please find my [CV](assets/pdf/LinhaiMaCV.pdf)  here. 
 
 #### I am actively seeking a postdoc or an R&D position in AI/ML.
+
+<a href="https://clustrmaps.com/site/1bvke"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=r3wPh4yJz0sGN8nfcQ9Vmzel_WUm9wULpb1P5QVYmFU&cl=ffffff" /></a>
