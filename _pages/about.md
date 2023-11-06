@@ -19,7 +19,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I got my Ph.D. from the Department of Computer Science at the University of Miami. I am working with [Dr. Liang Liang](https://liangbright.wordpress.com/). In my Ph.D. period, my research focused on improving the robustness of deep neural networks against adversarial noises. I proposed variant methods to achieve this goal, including regularization and adversarial training. Besides conducting experiments on basic classification tasks of natural images, I proposed methods to improve the robustness of cutting-edge models for more complicated tasks in medical application domains, e.g., ECG signal automatic diagnosis, MRI image segmentation, Cephalometric landmark detection, and blood cell detection.
+
+I obtained my Ph.D. from the Department of Computer Science at the University of Miami, under the supervision of [Dr. Liang Liang](https://liangbright.wordpress.com/). During my Ph.D. period, my research focused on improving the robustness of deep neural networks against adversarial noises. I proposed variant methods to achieve this goal, including regularization and adversarial training. Besides conducting experiments on basic classification tasks of natural images, I proposed methods to improve the robustness of cutting-edge models for more complicated tasks in medical application domains, e.g., ECG signal automatic diagnosis, MRI image segmentation, Cephalometric landmark detection, and blood cell detection.
 
 I have been a reviewer for international peer-reviewed journals and conferences, including top-tier conferences, e.g., ICLR and NeurIPS, and high-ranking journals in AI, e.g., Artificial Intelligence.
 
