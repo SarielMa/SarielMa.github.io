@@ -33,7 +33,18 @@
             href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css"
             media="none" id="highlight_theme_dark"> <script
             src="/assets/js/theme.js"></script> <script
-            src="/assets/js/dark_mode.js"></script> </head> <body
+            src="/assets/js/dark_mode.js"></script> <style>
+.tnote{color:var(--global-text-color-light);font-size:.95rem;margin:0 0 2.2rem}
+.tgroup{margin-bottom:2.6rem}
+.tinst{font-size:1.05rem;font-weight:500;color:var(--global-text-color);margin:0 0 .2rem;padding-bottom:.7rem;border-bottom:1px solid var(--global-divider-color)}
+.trow{display:grid;grid-template-columns:132px minmax(0,1fr);gap:1.2rem;padding:.85rem 0;border-bottom:1px solid var(--global-divider-color);scroll-margin-top:6.5rem}
+.tgroup .trow:last-child{border-bottom:0}
+.tterm{font-size:.9rem;color:var(--global-text-color-light);white-space:nowrap}
+.tcourses{list-style:none;margin:0;padding:0;font-size:.95rem;line-height:1.55}
+.tcourses li+li{margin-top:.45rem}
+.tcode{font-weight:600;margin-right:.15rem}
+@media(max-width:600px){.trow{grid-template-columns:1fr;gap:.15rem;padding:.9rem 0}.tterm{font-size:.82rem}}
+</style></head> <body
         class="fixed-top-nav "> <header> <nav id="navbar"
                 class="navbar navbar-light navbar-expand-sm fixed-top"> <div
                     class="container"> <a
@@ -72,28 +83,7 @@
                         class="progress-bar"></span> </div> </progress>
         </header> <div class="container mt-5"> <div class="post"> <header
                     class="post-header"> <h1 class="post-title">Teaching</h1> <p
-                        class="post-description"></p> </header> <article> <hr>
-                    <h3 id="2025-spring">2025 Spring at Yale University</h3> <ul> <li>Teaching
-                            Assistant of CB&B 750 01 (SP25): Core Topics in Biomedical Informatics</li> </ul> <hr>
-                    <h3 id="2023-spring">2023 Spring at University of Miami</h3> <ul> <li>Teaching
-                            Assistant of CSC546 Introduction to Machine
-                            Learning</li> <li>Teaching Assistant of CSC315
-                            Introduction to Python for Scientist</li> </ul> <hr>
-                    <h3 id="2022-fall">2022 Fall at University of Miami</h3> <ul> <li>Teaching
-                            Assistant of CSC546 Introduction to Machine
-                            Learning</li> </ul> <hr> <h3 id="2020-spring">2020
-                        Spring at University of Miami</h3> <ul> <li>Teaching Assistant of CSC315
-                            Introduction to Python for Scientist</li> </ul> <hr>
-                    <h3 id="2019-fall">2019 Fall at University of Miami</h3> <ul> <li>Teaching
-                            Assistant of CSC315 Introduction to Python for
-                            Scientist</li> </ul> <hr> <h3 id="2019-spring">2019
-                        Spring at University of Miami</h3> <ul> <li>Teaching Assistant of CSC546
-                            Introduction to Machine Learning</li> </ul> <hr> <h3
-                        id="2018-fall">2018 Fall at University of Miami</h3> <ul> <li>Teaching
-                            Assistant of CSC421 Computer Operating Systems</li>
-                    </ul> <hr> <h3 id="2017-fall">2017 Fall at University of Miami</h3> <ul>
-                        <li>Teaching Assistant of CSC421 Computer Operating
-                            Systems</li> </ul> </article> </div> </div> <footer
+                        class="post-description"></p> </header> <article><p class="tnote">Teaching assistant for the following courses.</p><section class="tgroup"><h2 class="tinst">Yale University</h2><div class="trow" id="2025-spring"><div class="tterm">2025 Spring</div><ul class="tcourses"><li><span class="tcode">CB&amp;B 750 01</span> Core Topics in Biomedical Informatics</li></ul></div></section><section class="tgroup"><h2 class="tinst">University of Miami</h2><div class="trow" id="2023-spring"><div class="tterm">2023 Spring</div><ul class="tcourses"><li><span class="tcode">CSC546</span> Introduction to Machine Learning</li><li><span class="tcode">CSC315</span> Introduction to Python for Scientist</li></ul></div><div class="trow" id="2022-fall"><div class="tterm">2022 Fall</div><ul class="tcourses"><li><span class="tcode">CSC546</span> Introduction to Machine Learning</li></ul></div><div class="trow" id="2020-spring"><div class="tterm">2020 Spring</div><ul class="tcourses"><li><span class="tcode">CSC315</span> Introduction to Python for Scientist</li></ul></div><div class="trow" id="2019-fall"><div class="tterm">2019 Fall</div><ul class="tcourses"><li><span class="tcode">CSC315</span> Introduction to Python for Scientist</li></ul></div><div class="trow" id="2019-spring"><div class="tterm">2019 Spring</div><ul class="tcourses"><li><span class="tcode">CSC546</span> Introduction to Machine Learning</li></ul></div><div class="trow" id="2018-fall"><div class="tterm">2018 Fall</div><ul class="tcourses"><li><span class="tcode">CSC421</span> Computer Operating Systems</li></ul></div><div class="trow" id="2017-fall"><div class="tterm">2017 Fall</div><ul class="tcourses"><li><span class="tcode">CSC421</span> Computer Operating Systems</li></ul></div></section></article> </div> </div> <footer
             class="fixed-bottom"> <div class="container mt-0"> © Copyright 2023
                 Linhai Ma. Powered by <a href="https://jekyllrb.com/"
                     target="_blank" rel="external nofollow noopener">Jekyll</a>
